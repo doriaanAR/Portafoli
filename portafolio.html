@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ca-valencia">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Meu Portafoli</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Estil per a la pàgina de Notícies/Blog */
+.noticies-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Dues columnes: una més àmplia per a articles i una més estreta per a consells */
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Estils per als articles */
+.articles {
+  padding-right: 20px;
+}
+
+.article {
+  margin-bottom: 30px;
+}
+
+.article h4 {
+  font-size: 1.5rem;
+  color: #007BFF;
+}
+
+.article p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.article .enllaç {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.article .enllaç:hover {
+  text-decoration: underline;
+}
+
+/* Estils per als consells o enllaços destacats */
+.consells {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.consells h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.consells ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.consells li {
+  margin-bottom: 10px;
+}
+
+.consells a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.consells a:hover {
+  text-decoration: underline;
+}
+
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 20px;
+      margin: 40px 0;
+    }
+
+    footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+    .apartado {
+      margin: 40px 0;
+    }
+
+    .foto-presentacio {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>El meu portafoli</h1>
+    <nav>
+      <a href="#presentacio">Inici</a>
+      <a href="#projectes">Projectes</a>
+      <a href="noticies">Noticies i consells</a>
+      <a href="#contacte">Contacte</a>
+    </nav>
+  </header>
+
+  <!-- SECCIÓ DE PRESENTACIÓ -->
+  <section id="presentacio" class="apartado">
+    <h2>Hola! Sóc Dorian Aura i Renard</h2>
+    <!-- Foto de la presentació -->
+    <img src="img/dorian1.jpeg" alt="Foto de Dorian" class="foto-presentacio">
+    <p class="biografia">Sóc un jove apassionat per la tecnologia i el disseny web. Estic cursant 4t d'ESO i m'agrada aprendre noves habilitats relacionades amb la programació i el disseny gràfic. En el meu temps lliure, m'agrada jugar videojocs i passar temps amb la meua família i amics.</p>
+  </section>
+
+  <!-- SECCIÓ DE PROJECTES -->
+<section id="projectes" class="apartado">
+  <h2>Els meus Projectes</h2>
+
+  <!-- Projecte futur 1 -->
+  <div class="projecte">
+    <h3>Projecte futur 1: Web personal amb e-commerce</h3>
+    <p>En aquest projecte, m'agradaria crear una pàgina web personal amb una secció d'e-commerce on vendre els meus dissenys i projectes. El faré utilitzant HTML, CSS, i JavaScript, i amb una base de dades per gestionar els productes.</p>
+  </div>
+
+  <!-- Projecte futur 2 -->
+  <div class="projecte">
+    <h3>Projecte futur 2: Aplicació de seguiment de tasques</h3>
+    <p>Aquesta aplicació permetria als usuaris gestionar les seues tasques diàries. Es podria fer amb una aplicació web que integre una base de dades per a les tasques i recordar a l'usuari quan han d'acabar-les.</p>
+  </div>
+
+  <!-- Projecte futur 3 -->
+  <div class="projecte">
+    <h3>Projecte futur 3: Joc educatiu per a xiquets i xiquetes</h3>
+    <p>El meu objectiu és crear un joc educatiu per a xiquets i xiquetes on aprenguen a programar de manera divertida. Utilitzaré HTML5, CSS i JavaScript per crear aquest joc interactiu i atractiu per als més xicotets.</p>
+  </div>
+</section>
+
+<!-- SECCIÓ DE NOTÍCIES/BLOG -->
+<section id="noticies" class="apartado">
+  <h2>Notícies i Consells</h2>
+
+  <!-- Dues columnes: una per als articles i una altra per als enllaços -->
+  <div class="noticies-container">
+    
+    <!-- Columna d'articles -->
+    <div class="articles">
+      <h3>Articles recents</h3>
+      
+      <div class="article">
+        <h4>L'acord d'Intel i TSMC està pràcticament tancat. Este és el pla en el qual estan treballant per a les seues fàbriques de xips</h4>
+        <p>El rescat de les fàbriques de semiconductors d'Intel és una prioritat per al Govern dels EUA. Els mals resultats econòmics que ha encadenat esta companyia durant diversos anys consecutius l'han col·locada en una posició molt delicada que a principis del passat mes de desembre va desencadenar l'eixida de Pat Gelsinger, el seu director general durant quasi quatre anys, per la porta de darrere. Siga com siga, Intel no pot caure. I no pot fer-ho pel fet que és el major fabricant de circuits integrats dels EUA.</p>
+        <a href="https://www.xataka.com/empresas-y-economia/acuerdo-intel-tsmc-esta-practicamente-cerrado-este-plan-que-estan-trabajando-para-sus-fabricas-chips" class="enllaç">Llegir més...</a>
+      </div>
+
+      <div class="article">
+        <h4>Fundadors de xicotetes startups i de grans tecnològiques ja té alguna cosa en comú: són milmillonaris gràcies a la IA</h4>
+        <p>Diuen que qui no arrisca no gana. Si per alguna cosa s'han caracteritzat els tres anys que portem de carrera armamentística per la IA, ha sigut, precisament, per les ingents sumes de diners amb el qual els inversors de capital de risc han regat a les empreses que desenrotllen esta tecnologia. Eixes inversions han fet que els principals actors d'eixa nova indústria s'hagen fet milmillonaris en un temps rècord.</p>
+        <a href="https://www.xataka.com/robotica-e-ia/fundadores-pequenas-startups-grandes-tecnologicas-tiene-algo-comun-milmillonarios-gracias-a-ia" class="enllaç">Llegir més...</a>
+      </div>
+
+      <div class="article">
+        <h4>El codi base que sosté les ajudes de 65 milions de persones està en risc: Elon Musk vol canviar-ho amb una IA</h4>
+        <p>Sense un pla realista ni recursos adequats, els experts advertixen que la migració sembla més un experiment polític que una modernització responsable.</p>
+        <a href="https://www.xataka.com/empresas-y-economia/codigo-base-que-sostiene-ayudas-a-65-millones-personas-esta-peligro-elon-musk-quiere-cambiarlo-ia" class="enllaç">Llegir més...</a>
+      </div>
+    </div>
+
+    <!-- Columna de consells o enllaços destacats -->
+    <div class="consells">
+      <h3>Consells i enllaços destacats</h3>
+      
+      <ul>
+        <li><a href="https://www.freecodecamp.org/espanol/news/aprende-javascript-curso-js-gratis-para-principiantes?utm_source=chatgpt.com">Curs gratuït de JavaScript per a principiants</a></li>
+        <li><a href="https://es.react.dev/?utm_source=chatgpt.com">Guia sobre el framework React</a></li>
+        <li><a href="https://www.figma.com/?utm_source=chatgpt.com">Eines per a dissenyadors web</a></li>
+        <li><a href="https://platzi.com/blog/por-que-necesitas-portafolio-profesional/?utm_source=chatgpt.com">Com crear un portafoli web professional</a></li>
+        <li><a href="https://designlab.com/ui-ux-design-events-and-workshops?utm_source=chatgpt.com">Webinars sobre disseny UX/UI</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+  <!-- SECCIÓ DE CONTACTE -->
+  <section id="contacte" class="apartado">
+    <h2>Contacta amb mi</h2>
+    <p>Pots contactar amb mi a través de les següents vies:</p>
+    <ul>
+      <li><strong>Correu electrònic:</strong> doraurren@alu.edu.gva.es</li>
+      <li><strong>Telèfon:</strong> +34 644 51 81 85</li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Dorian Aura i Renard — Tots els drets reservats</p>
+  </footer>
+
+</body>
+</html>
